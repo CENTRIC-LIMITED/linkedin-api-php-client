@@ -515,7 +515,7 @@ class Client
             $scheme,
             $authority,
             $path,
-            build_query($params),
+            http_build_query($params),
             $fragment
         );
         return $uri;
