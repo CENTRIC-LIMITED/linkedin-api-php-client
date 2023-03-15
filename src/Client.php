@@ -545,7 +545,7 @@ class Client
             'headers' => $headers,
         ]);
         if (!empty($params) && Method::GET === $method) {
-            $endpoint .= '?' . build_query($params);
+            $endpoint .= '?' . http_build_query($params);
         }
 
         try {
